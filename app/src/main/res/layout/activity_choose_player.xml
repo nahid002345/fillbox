@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+   
+    >
+
+   <TableRow
+        android:id="@+id/trHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+    <TextView
+        android:id="@+id/white_taken_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:text="Choose Player"
+        android:textSize="20dp"
+        android:background="#FFF"
+         />
+    
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/trBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        >
+        
+    <ImageView
+	    android:id="@+id/white"
+	    android:src="@drawable/go_white_no_bg"
+	    android:contentDescription="@string/white_stones_taken"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/white_taken"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Blue"
+        android:textSize="20dp"
+        android:textAlignment="center"
+         />
+    
+
+    </TableRow>
+
+    
+    <TableRow
+        android:id="@+id/trRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:padding="10dip"
+         
+         >
+        
+    <ImageView
+	    android:id="@+id/black"
+	    android:src="@drawable/go_black_no_bg"
+	    android:contentDescription="@string/white_stones_taken"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/black_taken"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Red"
+        android:textSize="20dp"
+         />
+    
+
+    </TableRow>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_id" >
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

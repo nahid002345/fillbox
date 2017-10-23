@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="size_entries">
+        <item>15x15</item>
+        <item>12x12</item>
+        <item>11x11</item>
+        <item>10x10</item>
+        <item>9x9</item>
+        <item>8x8</item>
+        <item>7x7</item>
+        <item>6x6</item>
+        <item>5x5</item>
+        <item>4x4</item>  
+    </string-array>
+    <string-array name="size_values">
+        
+        <item>15</item>
+        <item>12</item>
+        <item>11</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+    </string-array>
+</resources>

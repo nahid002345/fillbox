@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+   
+    >
+
+   <TableRow
+        android:id="@+id/trHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+    <TextView
+        android:id="@+id/singleType"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="2dp"
+        android:text="Choose Option"
+        android:textSize="20dp"
+        android:background="#FFF"
+         />
+    
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/trSingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        >
+        
+    <ImageView
+	    android:id="@+id/picSingle"
+	    android:src="@drawable/player_single"	    
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/txtSingle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="1 Player"
+        android:textSize="20dp"
+        android:textAlignment="center"
+         />
+    
+
+    </TableRow>
+
+    
+    <TableRow
+        android:id="@+id/trDouble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         android:padding="10dip"
+         
+         >
+        
+    <ImageView
+	    android:id="@+id/picDouble"
+	    android:src="@drawable/player_double"	    
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/txtDouble"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="2 Players"
+        android:textSize="20dp"
+         />
+    
+
+    </TableRow>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_id" >
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>
